@@ -1,0 +1,454 @@
+/*
+ * SMACSS + SCSS starter v2.1
+
+ */
+/* Site settings */
+.li--pr {
+  padding-right: 45px;
+}
+
+.box--mr {
+  margin-right: 40px;
+}
+
+/* Base */
+/* ===========================
+   Base
+   =========================== */
+body {
+  background: url("../images/particle.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #263556;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+hr {
+  height: 2px;
+  width: 530px;
+  background: -webkit-gradient(linear, left top, right top, from(#445682), to(#263556));
+  background: linear-gradient(to right, #445682, #263556);
+  border-radius: 50px;
+  margin: 50px 0px;
+  border: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1270px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  hr {
+    width: 373px;
+  }
+}
+
+/* Layouts */
+/* ==|====================
+   Layout/Nav
+   ======================= */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 130px;
+  text-transform: uppercase;
+}
+
+ul, a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  color: #a3b6e1;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+ul:hover, a:hover {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  color: white;
+}
+
+@media screen and (max-width: 1270px) {
+  nav {
+    height: 60px;
+    background-color: #733df9;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  ul {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  ul {
+    font-size: 13px;
+  }
+  .li--pr {
+    padding-right: 24px;
+  }
+}
+
+.left {
+  background-color: red;
+  width: 45%;
+  height: 100vh;
+  background: url("../images/bg-left.png") no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.img-canette {
+  position: absolute;
+  width: 264px;
+  top: 14%;
+  left: 8%;
+}
+
+@media screen and (min-width: 1825px) {
+  .img-canette {
+    position: absolute;
+    width: 395px;
+    top: 19%;
+    left: 13%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .left {
+    margin-top: 80px;
+    width: 100%;
+    background: url("../images/bg-left-rotate.png") no-repeat;
+    background-size: cover;
+    height: 60vh;
+    background-position: top;
+  }
+  .img-canette {
+    top: 650px;
+    left: 38%;
+    width: 231px;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .left {
+    margin-top: 80px;
+  }
+  .img-canette {
+    left: 33%;
+    top: 851px;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  .img-canette {
+    left: 31%;
+    top: 820px;
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img-canette {
+    left: 29%;
+    top: 783px;
+    width: 156px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  hr {
+    width: 319px;
+  }
+}
+
+.center {
+  width: 45%;
+}
+
+.center__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.center--title {
+  font-size: 81px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.center__container--btn {
+  margin-top: 40px;
+}
+
+.btn--detail, .btn--buy {
+  cursor: pointer;
+  width: 210px;
+  height: 70px;
+  border-radius: 50px;
+  border: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#7125fe), to(#9e11f9));
+  background: linear-gradient(to left, #7125fe, #9e11f9);
+  -webkit-box-shadow: 0px 0px 10px #9e11f9;
+          box-shadow: 0px 0px 10px #9e11f9;
+  color: white;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.btn--buy {
+  background: transparent;
+  border: 2px solid #9e11f9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-left: 20px;
+  width: 230px;
+}
+
+.btn--buy:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#7125fe), to(#9e11f9));
+  background: linear-gradient(to left, #7125fe, #9e11f9);
+  -webkit-box-shadow: 0px 0px 10px #9e11f9;
+          box-shadow: 0px 0px 10px #9e11f9;
+  border: none;
+}
+
+.center__container--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.box--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box--content {
+  margin-left: 7px;
+}
+
+.box--title {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: -6px;
+}
+
+.icon {
+  width: 60px;
+}
+
+@media screen and (min-width: 1980px) {
+  .container--box {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .center__container {
+    margin-top: 70px;
+  }
+  .center--title {
+    text-align: center;
+  }
+  .center__container--box {
+    width: 83%;
+    margin: auto;
+  }
+  .container--box {
+    margin-bottom: 0;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .center__container--box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  .center--title {
+    font-size: 51px;
+  }
+  .center__container--box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container--box {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .center--title {
+    font-size: 42px;
+  }
+  .btn--detail, .btn--buy {
+    width: 148px;
+    height: 47px;
+  }
+  .btn--buy {
+    margin-left: 8px;
+    width: 161px;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .btn--detail, .btn--buy {
+    width: 123px;
+    height: 39px;
+  }
+  .btn--buy {
+    width: 127px;
+    font-size: 14px;
+  }
+}
+
+.right {
+  width: 10%;
+  background: url("../images/bg-right.png") no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1270px) {
+  .right {
+    display: none;
+  }
+}
+
+/* Modules */
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */

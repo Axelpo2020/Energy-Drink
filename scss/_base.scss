@@ -1,0 +1,38 @@
+/* ===========================
+   Base
+   =========================== */
+   body {
+      background: url('../images/particle.png') no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-color:#263556;
+      font-family: $font1;
+   }
+
+hr {
+height: 2px;
+width: 530px;
+background: linear-gradient(to right, #445682, #263556);
+border-radius: 50px;
+margin: 50px 0px;
+border: 0;
+
+}
+
+.container {
+   display: flex;
+}
+
+
+
+@media screen and (max-width:1270px) {
+   .container {
+      flex-direction: column-reverse;
+   }
+}
+
+@media screen and (max-width:657px) {
+   hr {
+      width: 373px;
+   }
+}

@@ -1,0 +1,75 @@
+.left {
+    background-color: red;
+    width: 45%;
+    height: 100vh;
+    background: url('../images/bg-left.png') no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+
+.img-canette {
+    position: absolute;
+    width: 264px; //310px 
+    top: 14%;
+    left: 8%;
+}
+
+@media screen and (min-width: 1825px) {
+    .img-canette {
+        position: absolute;
+        width: 395px;
+        top: 19%;
+        left: 13%;
+    }
+}
+@media screen and (max-width: 1270px) {
+    .left {
+        margin-top: 80px;
+        width: 100%;
+        background: url('../images/bg-left-rotate.png') no-repeat;
+        background-size: cover;
+        height: 60vh;
+        background-position: top;
+    }
+
+    .img-canette {
+        top: 650px;
+        left: 38%;
+        width: 231px;
+    }
+}
+
+
+@media screen and (max-width: 758px) {
+    .left {
+        margin-top: 80px;
+    }
+    .img-canette {
+        left: 33%;
+        top: 851px;
+    }
+}
+
+@media screen and (max-width: 657px) {
+    .img-canette {
+        left: 31%;
+        top: 820px;
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .img-canette {
+        left: 29%;
+        top: 783px;
+        width: 156px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    hr {
+        width: 319px;
+    }
+    
+}

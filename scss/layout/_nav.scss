@@ -1,0 +1,52 @@
+/* ==|====================
+   Layout/Nav
+   ======================= */
+
+
+nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 130px;
+   text-transform: uppercase;
+}
+
+ul,a {
+   display: flex;
+   text-decoration: none;
+   align-items: center;
+   font-size:25px;
+   color: #a3b6e1;
+   transition: color .3s;
+   &:hover {
+      transition: color .3s;
+      color:white; 
+   }
+}
+
+
+
+
+
+@media screen and (max-width: 1270px) {
+   nav {
+      height: 60px;
+      background-color: #733df9;
+   }
+}
+
+@media screen and (max-width:657px) {
+   ul {
+      font-size: 18px;
+   }
+}
+
+@media screen and (max-width:500px) {
+   ul {
+      font-size: 13px;
+   }
+   .li--pr {
+      padding-right: 24px;
+   }
+}
+

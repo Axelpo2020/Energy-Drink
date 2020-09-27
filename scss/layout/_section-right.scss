@@ -1,0 +1,12 @@
+.right {
+    width: 10%;
+    background: url('../images/bg-right.png') no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+@media screen and (max-width:1270px) {
+    .right {
+       display: none;
+    }
+}
